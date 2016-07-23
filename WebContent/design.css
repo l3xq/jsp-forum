@@ -1,0 +1,394 @@
+@CHARSET "UTF-8";
+
+#header{
+	
+	margin: auto;
+	margin-bottom: 30px;
+	width: 1000px;
+	border: 1px solid;
+	height: 110px;
+	background-image:url("pozadina.jpg");
+	background-size: 100% 100%;
+	border-radius: 10px;
+	z-index: 0;
+
+}
+#header:hover{
+	cursor: hand;
+}
+#log_in{
+	color: #edf5f7;
+	margin: 7px;
+	width:240px;
+	border: 1px solid;
+	box-shadow: 1px 1px 1px #888888;
+	border-radius: 5px;
+	border-color: #f4f5f1;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: bold;
+	float: right;
+}
+#login_naslov{
+	text-align: center;
+	border: 1px solid;
+	border-radius: 7px;
+	background-color: #f4f5f1;
+	border-color:#f4f5f1;
+	color: #AA94D6;
+	
+}
+#okvir{
+	margin: auto;
+	margin-bottom:30px;
+	min-height:1000px;
+	width: 1000px;
+	border: 0px solid;
+	
+}
+#footer{
+	margin: auto;
+	width: 1000px;
+	border-top:1px solid;
+	border-top-color: #808080;
+	text-align: center;
+}
+#levi_deo{
+	margin: auto;
+	width: 700px;
+	min-height:1000px;
+	display:inline-block;
+	background-image:url("pozadina.jpg");
+	opacity: 0.8;
+	background-size: 700px 100%;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 6px 2px #888888;
+	border-radius: 5px;
+}
+
+#desni_deo{
+	margin: auto;
+	width: 250px;
+	min-height:inherit;
+	display:inline-block;
+	vertical-align:top;
+	border: 1px solid;
+	border-color: #ccc;
+	border-radius: 5px;
+	background-color: #BDC2C7;
+}
+
+#logo_holder{
+	margin-left: 100px;
+	float: left;
+	width: 500px;
+	height: 110px;
+	background-image:url("logo.png");
+	background-size: 500px 100%;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+
+}
+#logo_holder:hover{
+	cursor: pointer;
+}
+
+
+
+#holder_tekst{
+	border: 0px solid;
+	width: 70px;
+	float: left;
+	margin-top: 7px;
+
+}
+#holder{
+	border: 0px solid;
+	width: 70px;
+	float: left;
+}
+#holder_input{
+	width: 160px;
+	float: left;
+	padding-top: 6px;
+}
+#mali_input{
+	width: inherit;
+	height: inherit;
+	border-radius: 7px;
+	
+}
+#mali_submit{
+	margin-top:4px;
+	margin-left:4px;
+	border-radius: 6px;
+	color: white;
+	background-color: #AA94D6;
+	border-color: #B8A4E0;
+}
+a{
+	text-decoration: none;
+}
+a:HOVER {
+	text-decoration: underline;
+	background-color: #6fbeff;
+}
+#holder_forum{
+	margin:15px;
+	display: run-in;
+	height: 100px;
+	border: 1px solid;
+	border-color:#ccc;
+	border-radius: 6px;
+	background-color: #ecf3f4;
+	opacity: 0.8;
+	box-shadow: 0px 0px 6px 2px #888888;
+	
+}
+#dugme_tema{
+	margin-top:9px;
+	margin-left: 30px;
+	background-color: #ccc;
+	border-radius: 6px;
+	box-shadow: 0px 0px 6px 2px #888888;
+	padding: 3px;
+	display: inline-block;
+	opacity:0.9;
+}
+#dugme_tema:HOVER{
+	background-color: #6fbeff;
+}
+
+#holder_icon{
+	height: 100px;
+	width: 100px;
+	border: 0px solid;
+	float: left;
+	margin-right: 5px;
+	background-image: url("tema.jpg");
+	background-size: 100% 100%;
+	border-radius: 6px;
+}
+#holder-link-opis{
+	height: 100px;
+	width: 400px;
+	border: 1px solid;
+	float: left;
+	text-align: center;
+	line-height: 3.6;
+	font-size: 20pt;
+	margin-right: 5px;
+	border-radius: 6px;
+	border-color: #7a7a7a;
+	word-wrap: break-word;
+}
+
+#inputholderi{
+	float: left;
+}
+#holder-link-opis-tema{
+	height: 100px;
+	width: 400px;
+	border: 1px solid;
+	float: left;
+	text-align: center;
+	line-height: 1.8;
+	font-size: 20pt;
+	margin-right: 5px;
+	border-radius: 6px;
+	border-color: #7a7a7a;
+	word-wrap: break-word;
+}
+#link_forum{
+	color: #4300C9;
+}
+#link_forum:HOVER {
+	text-decoration: none;
+	background-color: transparent;
+}
+#holder_pregled{
+	height: 100px;
+	width: 150px;
+	border: 0px solid;
+	float: left;
+	background-color: #BDC2C7;
+	padding:5px;
+	border-radius:6px;
+	-webkit-box-sizing: border-box; /* sredjivanje sirine kod paddinga*/ 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;         
+}
+#naslov_forum{
+	display: run-in;
+	text-align: left;
+	padding-left: 40px;
+	height: 20px;
+	font-weight: bold;
+	padding-top: 10px;
+	font-size: 15pt;
+}
+
+#levi_deo_nova_tema{
+	margin: auto;
+	padding:10px;
+	width: 980px;
+	height:50%;
+	float:left;
+	background-color: #BDC2C7; 
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 6px 2px #888888;
+	border-radius: 10px;
+}
+#holder_input_tekst{
+	float: left;
+	width: 110px;
+	height: 480px;
+	border: 0px solid;
+	margin: 3px;
+}
+#holder_in_tekst1{
+	float: left;
+	width: 100px;
+	height: 60px;
+	border: 0px solid;
+	margin: 3px;
+	color: #000000;
+}
+
+#holder_in_tekst2{
+	float: left;
+	width: 100px;
+	height: 393px;
+	border: 0px solid;
+	margin: 3px;
+	color:#000000;
+	
+}
+
+#holder_input_tema{
+	float: left;
+	width: 620px;
+	height: 480px;
+	border: 0px solid;
+	margin: 3px;
+}
+
+#holder_in_tema1{
+	float: left;
+	width: 610px;
+	height: 60px;
+	border: 0px solid;
+	margin: 3px;
+	
+}
+
+#holder_in_tema2{
+	float: left;
+	width: 610px;
+	height: 350px;
+	border: 0px solid;
+	margin: 3px;
+}
+
+#holder_pregled1{
+	display:inline-block;
+	height: 100px;
+	width: 150px;
+	border: 1px solid;
+	background-color: #ecf3f4;
+	padding:5px;
+	border-radius:6px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box; 
+	vertical-align: top;   
+	border-color: #6fbeff;     
+}
+
+#holder_icon1{
+	display:inline-block;
+	height: 100px;
+	width: 100px;
+	border: 0px solid;
+	float:none;
+	margin-right: 5px;
+	background-image: url("korisnik.jpg");
+	background-size: 100% 100%;
+	border-radius: 6px;
+	vertical-align: top;
+	
+}
+#levi_deo1{
+	display:inline-block;
+	margin: auto;
+	width: 700px;
+	min-height:1000px;
+	background-image:url("pozadina.jpg");
+	opacity: 0.6;
+	background-size: 700px 100%;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 6px 2px #888888;
+	border-radius: 10px;
+	margin-left: 0px;
+	margin-right: 33px;
+}
+
+#okvir1{
+	margin: auto;
+	margin-bottom:30px;
+	width: 1000px;
+	min-height: 1000px;
+	border: 0px solid;
+	padding-right: 0px;
+}
+
+#desni_deo1{
+	display:inline-block;
+	margin: auto;
+	border: 1px solid;
+	border-color: #ccc;
+	border-radius: 10px;
+	margin-right: 0px;
+	vertical-align: top;
+	padding-left: 0px;
+	height: 1000px;
+	background-color: #BDC2C7;
+}
+#holder_forum_naslov{
+	text-align: center;
+	font-size: 15pt;
+}
+
+#holder_in_tema3{
+	float: left;
+	width: 610px;
+	height: 40px;
+	border: 0px solid;
+	margin: 3px;
+}
+
+#holder-poruka-opis{
+	display:inline-block;
+	width: 380px;
+	border: 1px solid;
+	text-align: left;
+	padding:4px;
+	font-size: 12pt;
+	margin-right: 5px;
+	border-radius: 6px;
+	border-color:  #6fbeff;
+	background-color: #BDC2C7;
+}
+
+#holder_poruka{
+	margin:15px;
+	display: run-in;
+	max-height:500px;
+	min-height:100px;
+	border: 1px solid;
+	border-color:#ccc;
+	border-radius: 6px;
+	background-color: #BDC2C7;
+	word-wrap: break-word;
+}

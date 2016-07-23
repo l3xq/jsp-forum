@@ -1,0 +1,58 @@
+// Following is DB Schema for 'Forum' school project
+// MySQL - phpMyAdmin used as driver
+// in case there are any mistakes, I apologize in advance, this readMe was made in gr8 hurry
+
+CREATE TABLE forum (
+idf int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+forum varchar(30) NOT NULL
+)
+
+CREATE TABLE korisnik (
+id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+user varchar(30) NOT NULL,
+lozinka varchar(30) NOT NULL,
+email varchar(30) NOT NULL
+)
+
+CREATE TABLE tema (
+idtema bigint NOT NULL PRIMARY KEY,
+tema varchar(30) NOT NULL,
+user int, 
+idf int,
+datpost datetime NOT NULL
+)
+
+CREATE TABLE poruka (
+idpor bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
+poruka varchar(501),
+user int,
+idtema bigint,
+datpost datetime
+)
+
+
+ALTER TABLE tema
+ADD CONSTRAINT fk_user
+FOREIGN KEY (user)
+REFERENCES korisnik(id);
+
+ALTER TABLE tema
+ADD CONSTRAINT fk_idf
+FOREIGN KEY (idf)
+REFERENCES forum(idf);
+
+ALTER TABLE poruka
+ADD CONSTRAINT fk_user1
+FOREIGN KEY (user)
+REFERENCES korisnik(id);
+
+ALTER TABLE poruka
+ADD CONSTRAINT fk_idtema
+FOREIGN KEY (idtema)
+REFERENCES tema(idtema);
+
+
+// is automaticly added if you are using phpMyAdmin ->
+
+ON UPDATE CASCADE 
+ON DELETE CASCADE;
